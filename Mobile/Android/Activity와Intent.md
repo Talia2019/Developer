@@ -176,3 +176,43 @@ VERBOSE(v) < DEBUG(d) < INFO(i) < WARNING(w) < ERROR(e)
 Log.e(String tag, String message)
 
 Log.e(String tag, String message, Throwable t)
+
+<br>
+
+## 6. ViewBinding 활용
+
+findViewById 대신에 viewBinding을 써 더 안전하게 활용한다는거 같음
+
+#### module의 build.gradle에 viewBinding속성 추가
+
+```kotlin
+kotlinOptions{
+    jvmTarget = '1.8'
+}
+viewBinding{
+    enable = true
+
+}
+```
+
+#### MainActivity
+
+```kotlin
+class MainActivity: AppCompatActivity(){
+    private lateinit var binding: ActivityMainBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        //inflate는 xml의 뷰를 객체화 해준다 생각하면 됨
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        //원래는 R.layout.activity_main을 넘겨주지만 우리가 생성한 루트 뷰를 넘겨주면 됨
+        setContentView(binding.root)
+
+        binding.button.setOnClickListener{
+            val intent = Intent(this, SubActivity::class.java)
+            intent.putExtra("msg", "메인에서 왔습니다.")
+            requestActivity.launch(intent)
+        }
+    }
+}
+```
