@@ -154,6 +154,8 @@
   - [Andtoid 개요](Mobile/Android/Android개요.md)
   - [Activity와 Intent](Mobile/Android/Activity와Intent.md)
   - [Kotlin Basic](Mobile/Android/KotlinBasic.md)
+  - [Service](Mobile/Android//Service.md)
+  - [Broadcast Receiver](Mobile/Android/BroadcastReceiver.md)
 
 <br>
 
