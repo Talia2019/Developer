@@ -67,6 +67,8 @@
 - ## 📌 Database
 
   - [Key](CS/DB/Key.md)
+  - [Join](CS/DB/Join.md)
+  - [Injection](CS/DB/Injection.md)
 
 <br>
 
