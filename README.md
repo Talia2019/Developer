@@ -69,6 +69,8 @@
   - [Key](CS/DB/Key.md)
   - [Join](CS/DB/Join.md)
   - [Injection](CS/DB/Injection.md)
+  - [SQL, NoSQL](CS/DB/SqlNoSql.md)
+  - [Normalization](CS/DB/Normalization.md)
 
 <br>
 
