@@ -71,6 +71,9 @@
   - [Injection](CS/DB/Injection.md)
   - [SQL, NoSQL](CS/DB/SqlNoSql.md)
   - [Normalization](CS/DB/Normalization.md)
+  - [Denormalization](CS/DB/Denormalization.md)
+  - [Anomaly](CS/DB/Anomaly.md)
+  - [Index](CS/DB/Index.md)
 
 <br>
 
