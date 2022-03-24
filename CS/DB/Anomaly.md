@@ -4,32 +4,30 @@
 
 <br>
 
-> 정규화를 해야하는 이유는 잘못된 테이블 설계로 인해 Anomaly (이상 현상)가 나타나기 때문이다.
->
-> 이 페이지에서는 Anomaly가 무엇인지 살펴본다.
+## 이상이란
 
-예) {Student ID, Course ID, Department, Course ID, Grade}
+> 릴레이션에서 일부 속성들의 종속이나 데이터의 중복으로 인해 데이터 조작시 불일치가 발생하는 것
+
+즉, 테이블 설계를 잘못하여 데이터를 삭제, 수정, 삽입할 때 논리적으로 오류가 생기는 것
+
+정규화를 해야하는 이유는 잘못된 테이블 설계로 인해 Anomaly (이상 현상)가 나타나기 때문
+
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcbQKYI%2FbtqHGTyd46J%2FR3OvsR371XQeWYZAqwmHek%2Fimg.png)
 
 1. 삽입 이상 (Insertion Anomaly)
 
-   기본키가 {Student ID, Course ID} 인 경우 -> Course를 수강하지 않은 학생은 Course ID가 없는 현상이 발생함. 결국 Course ID를 Null로 할 수밖에 없는데, 기본키는 Null이 될 수 없으므로, Table에 추가될 수 없음.
+   > 자료를 삽입할 때 의도하지 않은 자료까지 삽입해야만 자료를 테이블에 추가가 가능한 현상
 
-   굳이 삽입하기 위해서는 '미수강'과 같은 Course ID를 만들어야 함.
-
-   > 불필요한 데이터를 추가해야지, 삽입할 수 있는 상황 = Insertion Anomaly
+   강의를 아직 수강하지 않은 새로운 학생을 삽입할 경우 강의코드 속성에는 null값이 들어가야 하는 문제가 생김
 
 2. 갱신 이상 (Update Anomaly)
 
-   만약 어떤 학생의 전공 (Department) 이 "컴퓨터에서 음악"으로 바뀌는 경우.
+   > 중복된 데이터 중 일부만 수정되어 데이터 모순이 일어나는 이상
 
-   모든 Department를 "음악"으로 바꾸어야 함. 그러나 일부를 깜빡하고 바꾸지 못하는 경우, 제대로 파악 못함.
-
-   > 일부만 변경하여, 데이터가 불일치 하는 모순의 문제 = Update Anomaly
+   강의코드가 "AAC3"인 서준호의 전화번호를 수정할 경우, 3번째 튜플의 데이터만 수정될 것입니다. 그러면 3,4번째 튜플은 같은 사용자의 데이터 인데도 불구하고 전화번호가 다르게 됨
 
 3. 삭제 이상 (Deletion Anomaly)
 
-   만약 어떤 학생이 수강을 철회하는 경우, {Student ID, Department, Course ID, Grade}의 정보 중
+   > 어떤 정보를 삭제하면, 유용한 다른 정보까지 삭제되어버리는 이상
 
-   Student ID, Department 와 같은 학생에 대한 정보도 함께 삭제됨.
-
-   > 튜플 삭제로 인해 꼭 필요한 데이터까지 함께 삭제되는 문제 = Deletion Anomaly
+   강의코드가 AAC1인 데이터베이스 개론 강의를 삭제하게 되면 김영호 학생의 데이터까지 삭제됨
