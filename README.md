@@ -73,6 +73,10 @@
   - [Denormalization](CS/DB/Denormalization.md)
   - [Anomaly](CS/DB/Anomaly.md)
   - [Index](CS/DB/Index.md)
+  - [Transaction](CS/DB/Transaction.md)
+  - [Transaction Isolation Level](CS/DB/TransactionIsolationLevel.md)
+  - [Procedure](CS/DB/StoredProcedure.md)
+  - [Redis](CS/DB/Redis.md)
 
 <br>
 
