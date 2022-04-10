@@ -43,7 +43,9 @@ RAM은 휘발성이므로 껐다 키면 데이터가 날아갈 수 있으므로 
 
 데이터 구조는 key/value 값으로 이루어져 있음 (따라서 Redis는 비정형 데이터를 저장하는 비관계형 데이터베이스 관리 시스템)
 
-##### value 5가지
+<br>
+
+## value 5가지
 
 1. String (text, binary data) - 512MB까지 저장이 가능함
 2. set (String 집합)
