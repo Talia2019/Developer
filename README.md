@@ -84,6 +84,8 @@
 
   - [Clean code & Refactoring](CS/SWEngineering/CleancodingRefactoring.md)
   - [Clean code & Secure coding](CS/SWEngineering/CleancodingSecurecoding.md)
+  - [TDD](CS/SWEngineering/TDD.md)
+  - [Agile](CS/SWEngineering/Agile.md)
 
 <br>
 
