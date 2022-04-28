@@ -86,6 +86,8 @@
   - [Clean code & Secure coding](CS/SWEngineering/CleancodingSecurecoding.md)
   - [TDD](CS/SWEngineering/TDD.md)
   - [Agile](CS/SWEngineering/Agile.md)
+  - [Object Oriented Programming](CS/SWEngineering/OOP.md)
+  - [Functional Programming](CS/SWEngineering/FP.md)
 
 <br>
 
