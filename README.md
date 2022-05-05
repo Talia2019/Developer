@@ -88,6 +88,8 @@
   - [Agile](CS/SWEngineering/Agile.md)
   - [Object Oriented Programming](CS/SWEngineering/OOP.md)
   - [Functional Programming](CS/SWEngineering/FP.md)
+  - [DevOps](CS/SWEngineering/DevOps.md)
+  - [3rdParty](CS/SWEngineering/3rdParty.md)
 
 <br>
 
