@@ -90,6 +90,15 @@
   - [Functional Programming](CS/SWEngineering/FP.md)
   - [DevOps](CS/SWEngineering/DevOps.md)
   - [3rdParty](CS/SWEngineering/3rdParty.md)
+  - [MSA](CS/SWEngineering/MSA.md)
+
+<br>
+
+- ## 📌 Design Pattern
+
+  - [Design Pattern 개요](CS/Design%20pattern/DesignPattern.md)
+  - [Adapter](CS/Design%20pattern/Adapter.md)
+  - [Singleton](CS/Design%20pattern/Singleton.md)
 
 <br>
 
