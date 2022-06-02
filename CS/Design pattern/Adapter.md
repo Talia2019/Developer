@@ -139,3 +139,5 @@ public class Main{
 
 }
 ```
+
+이렇게 어댑터 패턴을 통해 MediaPlayer에서 Mediapackage파일을 재생시킬 수 있음
